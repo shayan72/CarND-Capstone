@@ -5,7 +5,7 @@ import rospy
 from geometry_msgs.msg import PoseStamped
 from styx_msgs.msg import Lane, Waypoint
 from scipy.spatial import KDTree
-
+from std_msgs.msg import Int32
 import math
 
 '''
@@ -38,11 +38,13 @@ class WaypointUpdater(object):
 
         # TODO: Add a subscriber for /traffic_waypoint and /obstacle_waypoint below
 
+        rospy.Subscriber('/traffic_waypoint', Int32, self.waypoints_cb)
+
         self.final_waypoints_pub = rospy.Publisher('final_waypoints', Lane, queue_size=1)
 
         # TODO: Add other member variables you need below
+        self.base_lane = None
         self.pose = None
-        self.base_waypoints = None
         self.waypoints_2d = None
         self.waypoint_tree = None
         self.stopline_wp_idx = None
@@ -53,7 +55,7 @@ class WaypointUpdater(object):
         rate = rospy.Rate(50)
         while not rospy.is_shutdown():
             rospy.logwarn('dfsdf')
-            if self.pose and self.base_waypoints and self.waypoint_tree:
+            if self.pose and self.base_lane and self.waypoint_tree:
                 closest_idx = self.get_closest_waypoint_idx()
                 self.publish_waypoints(closest_idx)
             rate.sleep()
@@ -88,7 +90,7 @@ class WaypointUpdater(object):
 
     def waypoints_cb(self, waypoints):
         rospy.logwarn('wayp')
-        self.base_waypoints = waypoints
+        self.base_lane = waypoints
         if not self.waypoints_2d:
             self.waypoints_2d = [[waypoint.pose.pose.position.x, waypoint.pose.pose.position.y] for waypoint in
                                  waypoints.waypoints]
@@ -104,7 +106,7 @@ class WaypointUpdater(object):
     def generate_lane(self):
         lane = Lane()
 
-        lane.header = self.base_waypoints.header
+        lane.header = self.base_lane.header
 
         closest_idx = self.get_closest_waypoint_idx()
         farthest_idx = closest_idx + LOOKAHEAD_WPS
@@ -137,6 +139,7 @@ class WaypointUpdater(object):
     def get_waypoint_velocity(self, waypoint):
         return waypoint.twist.twist.linear.x
 
+    @staticmethod
     def set_waypoint_velocity(self, waypoints, waypoint, velocity):
         waypoints[waypoint].twist.twist.linear.x = velocity
 
