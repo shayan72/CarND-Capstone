@@ -1,0 +1,124 @@
+{
+  "version": "3.21.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          144.0952380952381,
+          542.4444444444445
+        ],
+        [
+          132.19047619047618,
+          567.8412698412699
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          94.88888888888889,
+          540.063492063492
+        ],
+        [
+          83.77777777777777,
+          566.2539682539682
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          46.47619047619048,
+          540.063492063492
+        ],
+        [
+          32.98412698412699,
+          564.6666666666666
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          60.5,
+          584.0
+        ],
+        [
+          55.5,
+          594.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          39.5,
+          582.0
+        ],
+        [
+          34.0,
+          594.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          18.0,
+          582.5
+        ],
+        [
+          12.0,
+          593.0
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "1579716988028_2.png",
+  "imageData": null,
+  "imageHeight": 600,
+  "imageWidth": 800
+}

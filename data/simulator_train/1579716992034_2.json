@@ -1,0 +1,124 @@
+{
+  "version": "3.21.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          78.22222222222221,
+          478.95238095238096
+        ],
+        [
+          98.06349206349205,
+          526.5714285714286
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          167.11111111111111,
+          482.92063492063494
+        ],
+        [
+          186.15873015873015,
+          528.952380952381
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          255.20634920634922,
+          484.5079365079365
+        ],
+        [
+          275.04761904761904,
+          532.1269841269841
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          203.61904761904762,
+          576.5714285714286
+        ],
+        [
+          210.76190476190476,
+          590.8571428571429
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          229.8095238095238,
+          578.1587301587301
+        ],
+        [
+          236.15873015873018,
+          591.6507936507936
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tl",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          256.7936507936508,
+          577.3650793650794
+        ],
+        [
+          262.3492063492063,
+          592.4444444444445
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "1579716992034_2.png",
+  "imageData": null,
+  "imageHeight": 600,
+  "imageWidth": 800
+}

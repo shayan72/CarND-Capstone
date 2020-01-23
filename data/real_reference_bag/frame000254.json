@@ -1,0 +1,39 @@
+{
+  "version": "3.21.1",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "red",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          454.41269841269843,
+          306.73015873015873
+        ],
+        [
+          432.1904761904762,
+          257.5238095238095
+        ]
+      ],
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "frame000254.png",
+  "imageData": null,
+  "imageHeight": 600,
+  "imageWidth": 800
+}
