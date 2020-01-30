@@ -66,7 +66,6 @@ class TLClassifier(object):
         if confidence[0] >= self.threshold:
             tl_color = self.tf_lights.get(class_id[0], TrafficLight.UNKNOWN)
         else:
-            rospy.loginfo("Traffic light color not recognized!")
+            # rospy.loginfo("Traffic light color not recognized!")
             tl_color = TrafficLight.UNKNOWN
-
         return tl_color
